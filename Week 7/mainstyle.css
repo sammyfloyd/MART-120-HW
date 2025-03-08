@@ -1,0 +1,23 @@
+span.red{
+    color:rgb(100, 178, 255);
+    background-color: rgb(255, 32, 80);
+}
+
+span.yellow{
+    color: rgb(255, 215, 106);
+    background-color: orange;
+}
+
+#linksent{
+    color: rgb(255, 62, 142);
+}
+
+#title{
+    font-size: large;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/011/394/849/original/blue-spiral-background-illustration-perfect-for-wallpaper-backdrop-postcard-background-vector.jpg")
+}
