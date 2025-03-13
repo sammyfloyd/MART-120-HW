@@ -1,0 +1,72 @@
+<html>
+    <title>~CONTACT US~</title>
+    <head>
+        <a id="title">CONTACT US</a>
+        <link rel="stylesheet" type="text/css" href="mainstyle.css">
+        <br>
+        <style>
+
+            span{
+                background-color:rgb(185, 253, 121);
+            }
+        </style>
+        
+    </head>
+    <body>
+        <img src="http://media.istockphoto.com/illustrations/contact-us-colored-fresh-design-icons-3d-render-graphic-illustration-id546015274?k=6&m=546015274&s=612x612&w=0&h=yaeJAjHYE93sabQnk00wJSoJhg4TtOFdfhijjJmjRhs=" height="200 "/>
+       <br>
+        <p>Fill out your information here to <span>CONTACT US</span>,</p>
+       <br>
+       <form method="post" action="form.php" name="english_registration_form" id="english_registration_form">
+        <input type="text" id="name" name="name" aria-describedby="name-format" placeholder="Name"> <span class="error"><p id="name_error"></p></span>
+    
+        <input type="email" id="email" name="email" placeholder="Email"> <span class="error"><p id="email_error"></p></span>
+    
+        <input type="tel" id="telephone" name="telephone" placeholder="Telephone"> <span class="error"><p id="telephone_error"></p></span>
+    
+        <button class="register_button" type="submit" value="submit">Submit</button>
+        </form>
+       <br>
+       <p id="linksent"> See the world of THE WEBSITE:</p>
+       <a href="index.html"style="text-decoration:none" target="_new">~THE WEBSITE~</a>
+        <a href="page1.html"style="text-decoration:none" target="_new">~CHARISMATIC CHARACTERS~</a>
+        <a href="page2.html"style="text-decoration:none" target="_new">~QUIZZICAL QUESTIONS~</a>
+        <a href="page3.html"style="text-decoration:none" target="_new">~SENSATIONAL SURPRISE~</a>
+
+        <script>
+            document.getElementById("english_registration_form").onsubmit = function () {
+                 var x = document.forms["english_registration_form"]["name"].value;
+                 var y = document.forms["english_registration_form"]["email"].value;
+                 var z = document.forms["english_registration_form"]["telephone"].value;
+ 
+                 var submit = true;
+ 
+                 if (x == null || x == "") {
+                     nameError = "Please enter your name";
+                     document.getElementById("name_error").innerHTML = nameError;
+                     document.getElementById('name_error').style.border='solid';
+                     document.getElementById('name_error').style.borderColor='red';
+                     submit = false;
+                 }
+ 
+                 if (y == null || y == "") {
+                     emailError = "Please enter your email";
+                     document.getElementById("email_error").innerHTML = emailError;
+                     document.getElementById('email_error').style.border='solid';
+                     document.getElementById('email_error').style.borderColor='red';
+                     submit = false;
+                 }
+ 
+                 if (z == null || z == "") {
+                     telephoneError = "Please enter your telephone";
+                     document.getElementById("telephone_error").innerHTML = telephoneError;
+                     document.getElementById('telephone_error').style.border='solid';
+                     document.getElementById('telephone_error').style.borderColor='red';
+                     submit = false;
+                 }
+ 
+                 return submit;
+             }
+           </script>
+    </body>
+</html>
